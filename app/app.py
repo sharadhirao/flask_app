@@ -6,7 +6,7 @@ app = Flask(__name__)
 #encryption relies on secret keys so they could be run
 app.secret_key = "testing"
 #connoct to your Mongo DB database
-client = pymongo.MongoClient("<I_AM_WRONG_HELP_ME>")
+client = pymongo.MongoClient("mongodb://admin:himanshu123@localhost:27017")
 
 #get the database name
 db = client.get_database('total_records')
